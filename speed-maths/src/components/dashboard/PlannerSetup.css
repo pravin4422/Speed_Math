@@ -1,0 +1,94 @@
+.planner-setup {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.planner-setup h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.setup-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.exam-select,
+.date-input {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 44px;
+}
+
+.exam-select:focus,
+.date-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.error-message {
+  padding: 12px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: var(--radius-md);
+  color: #c33;
+  font-size: var(--text-sm);
+}
+
+.generate-btn {
+  padding: 14px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background 0.2s;
+}
+
+.generate-btn:hover {
+  background: var(--primary-dark);
+}
+
+.generate-btn:active {
+  transform: scale(0.98);
+}
+
+@media (min-width: 768px) {
+  .planner-setup {
+    padding: var(--spacing-xl);
+  }
+
+  .setup-form {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,47 @@
+.difficulty-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.difficulty-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-weight: 500;
+  min-height: 44px;
+}
+
+.difficulty-chip.active {
+  border-color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.difficulty-label {
+  font-size: 0.9375rem;
+}
+
+.difficulty-weight {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.difficulty-chip.active .difficulty-weight {
+  color: var(--primary);
+}
+
+@media (min-width: 640px) {
+  .difficulty-chips {
+    gap: 0.75rem;
+  }
+
+  .difficulty-chip {
+    padding: 0.75rem 1.25rem;
+  }
+}

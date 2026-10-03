@@ -1,0 +1,55 @@
+export const mockLeaderboard = {
+  daily: [
+    { id: 'u1', name: 'Priya Sharma', score: 2850, accuracy: 96, totalTimeSec: 420, isCurrentUser: false },
+    { id: 'u2', name: 'Arjun Patel', score: 2780, accuracy: 94, totalTimeSec: 445, isCurrentUser: false },
+    { id: 'u3', name: 'Neha Gupta', score: 2720, accuracy: 93, totalTimeSec: 460, isCurrentUser: false },
+    { id: 'u4', name: 'Rahul Kumar', score: 2680, accuracy: 92, totalTimeSec: 475, isCurrentUser: false },
+    { id: 'u5', name: 'Ananya Singh', score: 2640, accuracy: 91, totalTimeSec: 480, isCurrentUser: false },
+    { id: 'u6', name: 'Vikram Reddy', score: 2600, accuracy: 90, totalTimeSec: 490, isCurrentUser: false },
+    { id: 'u7', name: 'Kavya Iyer', score: 2580, accuracy: 89, totalTimeSec: 495, isCurrentUser: false },
+    { id: 'u8', name: 'Rohan Mehta', score: 2540, accuracy: 88, totalTimeSec: 510, isCurrentUser: false },
+    { id: 'u9', name: 'Shreya Das', score: 2500, accuracy: 87, totalTimeSec: 520, isCurrentUser: false },
+    { id: 'u10', name: 'Aditya Joshi', score: 2480, accuracy: 86, totalTimeSec: 525, isCurrentUser: false },
+    { id: 'u11', name: 'Meera Nair', score: 2460, accuracy: 85, totalTimeSec: 530, isCurrentUser: false },
+    { id: 'u12', name: 'Karthik Rao', score: 2440, accuracy: 84, totalTimeSec: 535, isCurrentUser: false },
+    { id: 'u13', name: 'Divya Pillai', score: 2420, accuracy: 83, totalTimeSec: 540, isCurrentUser: false },
+    { id: 'u14', name: 'Sanjay Verma', score: 2400, accuracy: 82, totalTimeSec: 545, isCurrentUser: false },
+    { id: 'current', name: 'You', score: 2380, accuracy: 81, totalTimeSec: 550, isCurrentUser: true },
+    { id: 'u15', name: 'Pooja Desai', score: 2360, accuracy: 80, totalTimeSec: 555, isCurrentUser: false },
+    { id: 'u16', name: 'Amit Shah', score: 2340, accuracy: 79, totalTimeSec: 560, isCurrentUser: false },
+  ],
+  weekly: [
+    { id: 'u1', name: 'Priya Sharma', score: 18500, accuracy: 95, totalTimeSec: 3200, isCurrentUser: false },
+    { id: 'u2', name: 'Arjun Patel', score: 17800, accuracy: 93, totalTimeSec: 3450, isCurrentUser: false },
+    { id: 'u3', name: 'Neha Gupta', score: 17200, accuracy: 92, totalTimeSec: 3600, isCurrentUser: false },
+    { id: 'u4', name: 'Rahul Kumar', score: 16800, accuracy: 91, totalTimeSec: 3750, isCurrentUser: false },
+    { id: 'u5', name: 'Ananya Singh', score: 16400, accuracy: 90, totalTimeSec: 3800, isCurrentUser: false },
+    { id: 'current', name: 'You', score: 16200, accuracy: 89, totalTimeSec: 3850, isCurrentUser: true },
+    { id: 'u6', name: 'Vikram Reddy', score: 16000, accuracy: 88, totalTimeSec: 3900, isCurrentUser: false },
+    { id: 'u7', name: 'Kavya Iyer', score: 15800, accuracy: 87, totalTimeSec: 3950, isCurrentUser: false },
+    { id: 'u8', name: 'Rohan Mehta', score: 15600, accuracy: 86, totalTimeSec: 4000, isCurrentUser: false },
+    { id: 'u9', name: 'Shreya Das', score: 15400, accuracy: 85, totalTimeSec: 4050, isCurrentUser: false },
+    { id: 'u10', name: 'Aditya Joshi', score: 15200, accuracy: 84, totalTimeSec: 4100, isCurrentUser: false },
+  ],
+  allTime: [
+    { id: 'u1', name: 'Priya Sharma', score: 85000, accuracy: 94, totalTimeSec: 18000, isCurrentUser: false },
+    { id: 'u2', name: 'Arjun Patel', score: 82000, accuracy: 93, totalTimeSec: 19200, isCurrentUser: false },
+    { id: 'current', name: 'You', score: 78500, accuracy: 91, totalTimeSec: 20400, isCurrentUser: true },
+    { id: 'u3', name: 'Neha Gupta', score: 76000, accuracy: 90, totalTimeSec: 21000, isCurrentUser: false },
+    { id: 'u4', name: 'Rahul Kumar', score: 74500, accuracy: 89, totalTimeSec: 21600, isCurrentUser: false },
+    { id: 'u5', name: 'Ananya Singh', score: 72000, accuracy: 88, totalTimeSec: 22200, isCurrentUser: false },
+    { id: 'u6', name: 'Vikram Reddy', score: 70500, accuracy: 87, totalTimeSec: 22800, isCurrentUser: false },
+    { id: 'u7', name: 'Kavya Iyer', score: 68000, accuracy: 86, totalTimeSec: 23400, isCurrentUser: false },
+    { id: 'u8', name: 'Rohan Mehta', score: 66500, accuracy: 85, totalTimeSec: 24000, isCurrentUser: false },
+    { id: 'u9', name: 'Shreya Das', score: 64000, accuracy: 84, totalTimeSec: 24600, isCurrentUser: false },
+    { id: 'u10', name: 'Aditya Joshi', score: 62500, accuracy: 83, totalTimeSec: 25200, isCurrentUser: false },
+  ]
+};
+
+export const mockPersonalBest = {
+  score: 3200,
+  accuracy: 98,
+  date: '2026-09-28',
+  exam: 'SSC CGL',
+  topic: 'Percentages'
+};

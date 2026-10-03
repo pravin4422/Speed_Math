@@ -1,0 +1,24 @@
+.trend-chart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.trend-chart-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .trend-chart {
+    padding: 16px;
+  }
+
+  .trend-chart-title {
+    font-size: 15px;
+  }
+}

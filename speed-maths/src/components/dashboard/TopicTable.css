@@ -1,0 +1,137 @@
+.topic-table-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.desktop-table {
+  display: table;
+}
+
+.topic-table-mobile {
+  display: none;
+}
+
+.topic-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.topic-table th {
+  background: var(--background);
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+}
+
+.topic-table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.topic-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.topic-table tbody tr:hover {
+  background: var(--background);
+}
+
+.topic-name {
+  font-weight: 500;
+}
+
+.accuracy-cell {
+  color: var(--accent-green);
+  font-weight: 500;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-success {
+  background: var(--accent-green-light);
+  color: var(--accent-green);
+}
+
+.status-warning {
+  background: var(--accent-yellow-light);
+  color: var(--accent-yellow);
+}
+
+.status-danger {
+  background: var(--accent-red-light);
+  color: var(--accent-red);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .desktop-table {
+    display: none;
+  }
+
+  .topic-table-mobile {
+    display: block;
+    padding: 8px;
+  }
+
+  .topic-mobile-item {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .topic-mobile-item:last-child {
+    border-bottom: none;
+  }
+
+  .topic-mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+
+  .topic-mobile-name {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-primary);
+    flex: 1;
+  }
+
+  .topic-mobile-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .topic-mobile-stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 4px 0;
+  }
+
+  .topic-stat-label {
+    color: var(--text-secondary);
+  }
+
+  .topic-stat-value {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,165 @@
+.plan-day {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.plan-day.today {
+  border-color: var(--primary-color);
+  background: var(--primary-light);
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.day-date {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.today-badge {
+  padding: 4px 8px;
+  background: var(--primary-color);
+  color: white;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.day-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.task-item:hover {
+  background: var(--bg-secondary);
+}
+
+.task-item.completed {
+  opacity: 0.6;
+}
+
+.task-item.completed .task-label {
+  text-decoration: line-through;
+}
+
+.task-checkbox {
+  position: relative;
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  margin: -12px;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.task-checkbox input:checked ~ .checkmark {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.task-checkbox input:checked ~ .checkmark::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.task-checkbox input:focus ~ .checkmark {
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-type {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.task-type.learn {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.task-type.practice {
+  background: #ddd6fe;
+  color: #6d28d9;
+}
+
+.task-type.mock {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.task-type.revision {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.task-label {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.task-label:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .task-content {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+}
